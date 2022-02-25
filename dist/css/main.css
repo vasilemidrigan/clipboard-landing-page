@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .header-wrapper .header__logo {
+  background-image: url(/images/bg-header-mobile.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-wrapper .header-cntnt__txt-wrap {
+  width: 85%;
+  margin: 0 auto;
+}
+
+header .header-wrapper .header-cntnt__txt-wrap .header-cntnt__txt-wrap__p {
+  margin-top: 15px;
+}
+
+header .header__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 40px;
+}
+
+header .header__buttons button {
+  width: 85%;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+header .header__buttons button:first-child {
+  margin-bottom: 30px;
+  background-color: #26baa4;
+  -webkit-box-shadow: 2px 3px 0px #209786;
+          box-shadow: 2px 3px 0px #209786;
+}
+
+header .header__buttons button:last-child {
+  background-color: #6173ff;
+  -webkit-box-shadow: 2px 3px 0px #4a5bd9;
+          box-shadow: 2px 3px 0px #4a5bd9;
+}
+
+* {
+  font-size: 17px;
+  font-family: "Bai Jamjuree", sans-serif;
+  color: #9fabb2;
+}
+
+p,
+h1 {
+  text-align: center;
+}
+
+h1 {
+  color: #4c545d;
+  font-size: 1.7em;
+}
+/*# sourceMappingURL=main.css.map */

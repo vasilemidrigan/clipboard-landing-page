@@ -1,0 +1,24 @@
+// Imports
+@import "resets";
+@import "variables";
+@import "mixins";
+@import "header";
+// Import Fonts Bai Jamjure 400 and 600 from Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+// Body
+* {
+  font-size: 17px;
+  font-family: "Bai Jamjuree", sans-serif;
+  color: $grayish-blue;
+}
+// Specific styles
+p,
+h1 {
+  text-align: center;
+}
+
+h1 {
+  color: $dark-grayish-blue;
+  font-size: 1.7em;
+}

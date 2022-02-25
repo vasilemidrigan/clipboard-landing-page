@@ -1,0 +1,42 @@
+// Imports
+@import "mixins";
+
+// Header Section
+header {
+  .header-wrapper {
+    .header__logo {
+      background-image: url(/images/bg-header-mobile.png);
+      @include display-flex(row, center, center);
+    }
+    .header-cntnt__txt-wrap {
+      width: 85%;
+      margin: 0 auto;
+
+      .header-cntnt__txt-wrap__p {
+        margin-top: 15px;
+      }
+    }
+  }
+  .header__buttons {
+    @include display-flex(column, center, center);
+    padding-top: 40px;
+    button {
+      width: 85%;
+      height: 50px;
+      border: none;
+      border-radius: 30px;
+      color: $white;
+      font-size: 1.1em;
+      font-weight: 600;
+      &:first-child {
+        margin-bottom: 30px;
+        background-color: $strong-cyan;
+        box-shadow: 2px 3px 0px $border-green;
+      }
+      &:last-child {
+        background-color: $light-blue;
+        box-shadow: 2px 3px 0px $border-blue;
+      }
+    }
+  }
+}
