@@ -32,46 +32,6 @@ header .header-wrapper .header-cntnt__txt-wrap .header-cntnt__txt-wrap__p {
   margin-top: 15px;
 }
 
-header .header__buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 40px;
-}
-
-header .header__buttons button {
-  width: 85%;
-  height: 50px;
-  border: none;
-  border-radius: 30px;
-  color: #fff;
-  font-size: 1.1em;
-  font-weight: 600;
-}
-
-header .header__buttons button:first-child {
-  margin-bottom: 30px;
-  background-color: #26baa4;
-  -webkit-box-shadow: 2px 3px 0px #209786;
-          box-shadow: 2px 3px 0px #209786;
-}
-
-header .header__buttons button:last-child {
-  background-color: #6173ff;
-  -webkit-box-shadow: 2px 3px 0px #4a5bd9;
-          box-shadow: 2px 3px 0px #4a5bd9;
-}
-
 * {
   font-size: 17px;
   font-family: "Bai Jamjuree", sans-serif;
@@ -131,11 +91,105 @@ h3 {
   margin-top: 10px;
 }
 
+.btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 40px;
+}
+
+.btns button {
+  width: 85%;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.btns button:first-child {
+  margin-bottom: 30px;
+  background-color: #26baa4;
+  -webkit-box-shadow: 2px 3px 0px #209786;
+          box-shadow: 2px 3px 0px #209786;
+}
+
+.btns button:last-child {
+  background-color: #6173ff;
+  -webkit-box-shadow: 2px 3px 0px #4a5bd9;
+          box-shadow: 2px 3px 0px #4a5bd9;
+}
+
 main {
   margin-top: 160px;
 }
 
-main div:last-child img {
+main .main__a img:last-of-type {
   margin: 0;
+}
+
+main .main__a .cntnt-default:nth-child(6) {
+  margin-top: 180px;
+}
+
+main .main__b .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main__b .image img {
+  width: unset;
+  margin-bottom: 50px;
+}
+
+main .main__c {
+  margin: 100px 0 140px 0;
+}
+
+main .main__c .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main__c .image img {
+  width: 150px;
+  margin-bottom: 50px;
+}
+
+main .main__c .image img:nth-child(2), main .main__c .image img:nth-child(4), main .main__c .image img:nth-child(5) {
+  width: 130px;
 }
 /*# sourceMappingURL=main.css.map */

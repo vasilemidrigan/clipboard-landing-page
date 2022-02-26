@@ -49,12 +49,62 @@ h3 {
     margin-top: 10px;
   }
 }
+// Buttons
+.btns {
+  @include display-flex(column, center, center);
+  padding-top: 40px;
+  button {
+    width: 85%;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    color: $white;
+    font-size: 1.1em;
+    font-weight: 600;
+    &:first-child {
+      margin-bottom: 30px;
+      background-color: $strong-cyan;
+      box-shadow: 2px 3px 0px $border-green;
+    }
+    &:last-child {
+      background-color: $light-blue;
+      box-shadow: 2px 3px 0px $border-blue;
+    }
+  }
+}
 // Main Section
 main {
   margin-top: 160px;
-  div:last-child {
-    img {
+  .main__a {
+    img:last-of-type {
       margin: 0;
+    }
+    .cntnt-default:nth-child(6) {
+      margin-top: 180px;
+    }
+  }
+  .main__b {
+    .image {
+      @include display-flex(row, center, center);
+      img {
+        width: unset;
+        margin-bottom: 50px;
+      }
+    }
+  }
+  .main__c {
+    margin: 100px 0 140px 0;
+    .image {
+      @include display-flex(column, center, center);
+      img {
+        width: 150px;
+        margin-bottom: 50px;
+        &:nth-child(2),
+        &:nth-child(4),
+        &:nth-child(5) {
+          width: 130px;
+        }
+      }
     }
   }
 }

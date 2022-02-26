@@ -17,26 +17,4 @@ header {
       }
     }
   }
-  .header__buttons {
-    @include display-flex(column, center, center);
-    padding-top: 40px;
-    button {
-      width: 85%;
-      height: 50px;
-      border: none;
-      border-radius: 30px;
-      color: $white;
-      font-size: 1.1em;
-      font-weight: 600;
-      &:first-child {
-        margin-bottom: 30px;
-        background-color: $strong-cyan;
-        box-shadow: 2px 3px 0px $border-green;
-      }
-      &:last-child {
-        background-color: $light-blue;
-        box-shadow: 2px 3px 0px $border-blue;
-      }
-    }
-  }
 }
