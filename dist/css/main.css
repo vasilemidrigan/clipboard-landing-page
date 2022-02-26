@@ -78,13 +78,64 @@ header .header__buttons button:last-child {
   color: #9fabb2;
 }
 
-p,
-h1 {
+p {
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  color: #4c545d;
   text-align: center;
 }
 
 h1 {
-  color: #4c545d;
   font-size: 1.7em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+.image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.image img {
+  width: 80%;
+  margin-top: 20px;
+}
+
+.cntnt-default {
+  width: 85%;
+  margin: 60px auto;
+}
+
+.cntnt-default p {
+  margin-top: 10px;
+}
+
+main {
+  margin-top: 160px;
+}
+
+main div:last-child img {
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */

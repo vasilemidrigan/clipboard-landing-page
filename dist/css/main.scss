@@ -13,12 +13,48 @@
   color: $grayish-blue;
 }
 // Specific styles
-p,
-h1 {
+// Paragraphs
+p {
   text-align: center;
 }
-
-h1 {
+// Headers
+h1,
+h2,
+h3 {
   color: $dark-grayish-blue;
+  text-align: center;
+}
+h1 {
   font-size: 1.7em;
+}
+h2 {
+  font-size: 1.6em;
+}
+h3 {
+  font-size: 1.4em;
+}
+// All images
+.image {
+  @include display-flex(row, center, center);
+  img {
+    width: 80%;
+    margin-top: 20px;
+  }
+}
+// Default Content Div
+.cntnt-default {
+  width: 85%;
+  margin: 60px auto;
+  p {
+    margin-top: 10px;
+  }
+}
+// Main Section
+main {
+  margin-top: 160px;
+  div:last-child {
+    img {
+      margin: 0;
+    }
+  }
 }
