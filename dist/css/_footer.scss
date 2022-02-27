@@ -1,0 +1,35 @@
+// Footer Section
+
+// Import
+@import "mixins";
+
+// footer
+footer {
+  background-color: $footer-bg;
+  @include display-flex(column, center, center);
+  .footer__logo {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+  }
+  img {
+    height: 200px;
+  }
+  ul {
+    text-align: center;
+    list-style: none;
+    li {
+      color: $dark-grayish-blue;
+      margin-bottom: 30px;
+    }
+  }
+  .socials {
+    margin: 20px 0 50px 0;
+    width: 50%;
+    @include display-flex(row, space-around, unset);
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

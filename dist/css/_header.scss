@@ -4,7 +4,7 @@
 // Header Section
 header {
   .header-wrapper {
-    .header__logo {
+    .logo {
       background-image: url(/images/bg-header-mobile.png);
       @include display-flex(row, center, center);
     }
