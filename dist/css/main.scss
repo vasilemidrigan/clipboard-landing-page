@@ -4,17 +4,22 @@
 @import "mixins";
 @import "header";
 @import "footer";
+@import "active-states";
 
 // Import Fonts Bai Jamjure 400 and 600 from Google Fonts
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
 
-// Body
 * {
   font-size: 17px;
   font-family: "Bai Jamjuree", sans-serif;
   color: $grayish-blue;
 }
-// Specific styles
+html {
+  @include display-flex(unset, center, unset);
+}
+body {
+  max-width: 375px;
+}
 // Paragraphs
 p {
   text-align: center;
@@ -78,15 +83,12 @@ h3 {
 main {
   margin-top: 160px;
   .main__a {
-    img:last-of-type {
-      margin: 0;
-    }
     .cntnt-default:nth-child(6) {
       margin-top: 180px;
     }
   }
   .main__b {
-    .image {
+    .image:nth-child(1) {
       @include display-flex(row, center, center);
       img {
         width: unset;
@@ -110,3 +112,6 @@ main {
     }
   }
 }
+
+// Import media queries for screens wider than 1000px
+@import "media-queries";

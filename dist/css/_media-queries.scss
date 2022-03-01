@@ -1,0 +1,85 @@
+// Media Queries for screens wider than 1000px
+
+@import "active-states";
+
+@media screen and (min-width: 1000px) {
+  body {
+    max-width: unset;
+  }
+  p,
+  h1,
+  h2,
+  h3 {
+    line-height: 1.8em;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 2.1em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  .btns {
+    @include display-flex(row, center, unset);
+    gap: 20px;
+    button {
+      width: 20%;
+    }
+  }
+  // Header
+  header {
+    .header-wrapper {
+      .logo {
+        background-image: url(/images/bg-header-desktop.png);
+        @include display-flex(row, center, center);
+      }
+      .header-cntnt__txt-wrap {
+        width: 50%;
+      }
+    }
+  }
+  // Main
+  main {
+    margin-top: 160px;
+    .main__a {
+      .cntnt-default {
+        p {
+          margin: 0 auto;
+          width: 70%;
+        }
+      }
+      img:last-of-type {
+        margin: 0;
+      }
+      .cntnt-default:nth-child(6) {
+        // margin-top: 180px;
+      }
+    }
+    .main__b {
+      .image {
+        @include display-flex(row, center, center);
+        img {
+          width: unset;
+          margin-bottom: 50px;
+        }
+      }
+    }
+    .main__c {
+      margin: 100px 0 140px 0;
+      .image {
+        @include display-flex(column, center, center);
+        img {
+          width: 150px;
+          margin-bottom: 50px;
+          &:nth-child(2),
+          &:nth-child(4),
+          &:nth-child(5) {
+            width: 130px;
+          }
+        }
+      }
+    }
+  }
+}

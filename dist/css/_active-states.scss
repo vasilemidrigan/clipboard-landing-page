@@ -1,0 +1,38 @@
+// Active states
+
+.grid {
+  display: grid;
+  border: 1px solid red;
+  .img-grid {
+    grid-area: imgGrid;
+    position: relative;
+    width: 650px;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 575px;
+      position: absolute;
+      top: 0;
+      left: -30px;
+    }
+
+    border: 1px solid black;
+  }
+  .active-grid__1 {
+    grid-area: active-grid__1;
+    border: 1px solid black;
+  }
+  .active-grid__2 {
+    grid-area: active-grid__2;
+    border: 1px solid black;
+  }
+  .active-grid__3 {
+    grid-area: active-grid__3;
+    border: 1px solid black;
+  }
+  grid-template: repeat(1fr, 3) / 2fr;
+  grid-template-areas:
+    "imgGrid active-grid__1"
+    "imgGrid active-grid__2"
+    "imgGrid active-grid__3";
+}
