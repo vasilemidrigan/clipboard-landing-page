@@ -94,51 +94,65 @@ footer .socials img {
 .grid {
   display: -ms-grid;
   display: grid;
-  border: 1px solid red;
-  -ms-grid-rows: (3)[1fr];
+  -ms-grid-rows: (10)[1fr];
   -ms-grid-columns: 2fr;
-      grid-template: repeat(1fr, 3)/2fr;
-      grid-template-areas: "imgGrid active-grid__1" "imgGrid active-grid__2" "imgGrid active-grid__3";
+      grid-template: repeat(1fr, 10)/2fr;
+      grid-template-areas: "imgGrid . " "imgGrid . " "imgGrid active-grid__1" "imgGrid active-grid__1" "imgGrid active-grid__2" "imgGrid active-grid__2" "imgGrid active-grid__3" "imgGrid active-grid__3" "imgGrid . " "imgGrid . ";
+  -webkit-column-gap: 70px;
+          column-gap: 70px;
 }
 
 .grid .img-grid {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
+  -ms-grid-row-span: 10;
   -ms-grid-column: 1;
   grid-area: imgGrid;
   position: relative;
   width: 650px;
-  height: 100%;
-  border: 1px solid black;
+  height: 575px;
 }
 
 .grid .img-grid img {
   width: 100%;
-  height: 575px;
+  height: 100%;
   position: absolute;
-  top: 0;
   left: -30px;
 }
 
+.grid .active-grid__1,
+.grid .active-grid__2,
+.grid .active-grid__3 {
+  margin: 10px;
+}
+
+.grid .active-grid__1 h3,
+.grid .active-grid__1 p,
+.grid .active-grid__2 h3,
+.grid .active-grid__2 p,
+.grid .active-grid__3 h3,
+.grid .active-grid__3 p {
+  text-align: left;
+}
+
 .grid .active-grid__1 {
-  -ms-grid-row: 1;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: active-grid__1;
-  border: 1px solid black;
 }
 
 .grid .active-grid__2 {
-  -ms-grid-row: 2;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: active-grid__2;
-  border: 1px solid black;
 }
 
 .grid .active-grid__3 {
-  -ms-grid-row: 3;
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: active-grid__3;
-  border: 1px solid black;
 }
 
 * {
@@ -321,51 +335,65 @@ main .main__c .image img:nth-child(2), main .main__c .image img:nth-child(4), ma
 .grid {
   display: -ms-grid;
   display: grid;
-  border: 1px solid red;
-  -ms-grid-rows: (3)[1fr];
+  -ms-grid-rows: (10)[1fr];
   -ms-grid-columns: 2fr;
-      grid-template: repeat(1fr, 3)/2fr;
-      grid-template-areas: "imgGrid active-grid__1" "imgGrid active-grid__2" "imgGrid active-grid__3";
+      grid-template: repeat(1fr, 10)/2fr;
+      grid-template-areas: "imgGrid . " "imgGrid . " "imgGrid active-grid__1" "imgGrid active-grid__1" "imgGrid active-grid__2" "imgGrid active-grid__2" "imgGrid active-grid__3" "imgGrid active-grid__3" "imgGrid . " "imgGrid . ";
+  -webkit-column-gap: 70px;
+          column-gap: 70px;
 }
 
 .grid .img-grid {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
+  -ms-grid-row-span: 10;
   -ms-grid-column: 1;
   grid-area: imgGrid;
   position: relative;
   width: 650px;
-  height: 100%;
-  border: 1px solid black;
+  height: 575px;
 }
 
 .grid .img-grid img {
   width: 100%;
-  height: 575px;
+  height: 100%;
   position: absolute;
-  top: 0;
   left: -30px;
 }
 
+.grid .active-grid__1,
+.grid .active-grid__2,
+.grid .active-grid__3 {
+  margin: 10px;
+}
+
+.grid .active-grid__1 h3,
+.grid .active-grid__1 p,
+.grid .active-grid__2 h3,
+.grid .active-grid__2 p,
+.grid .active-grid__3 h3,
+.grid .active-grid__3 p {
+  text-align: left;
+}
+
 .grid .active-grid__1 {
-  -ms-grid-row: 1;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: active-grid__1;
-  border: 1px solid black;
 }
 
 .grid .active-grid__2 {
-  -ms-grid-row: 2;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: active-grid__2;
-  border: 1px solid black;
 }
 
 .grid .active-grid__3 {
-  -ms-grid-row: 3;
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: active-grid__3;
-  border: 1px solid black;
 }
 
 @media screen and (min-width: 1000px) {
@@ -429,7 +457,6 @@ main .main__c .image img:nth-child(2), main .main__c .image img:nth-child(4), ma
     margin-top: 160px;
   }
   main .main__a .cntnt-default p {
-    margin: 0 auto;
     width: 70%;
   }
   main .main__a img:last-of-type {
