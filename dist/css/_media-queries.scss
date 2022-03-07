@@ -47,13 +47,8 @@
       .cntnt-default {
         p {
           width: 70%;
+          margin: 0 auto;
         }
-      }
-      img:last-of-type {
-        margin: 0;
-      }
-      .cntnt-default:nth-child(6) {
-        // margin-top: 180px;
       }
     }
     .main__b {

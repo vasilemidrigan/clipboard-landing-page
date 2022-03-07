@@ -1,7 +1,9 @@
 // Active states
 
+// desktop image and items grid
 .grid {
   display: grid;
+  margin-bottom: 100px;
   .img-grid {
     grid-area: imgGrid;
     position: relative;

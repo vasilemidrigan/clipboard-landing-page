@@ -94,6 +94,7 @@ footer .socials img {
 .grid {
   display: -ms-grid;
   display: grid;
+  margin-bottom: 100px;
   -ms-grid-rows: (10)[1fr];
   -ms-grid-columns: 2fr;
       grid-template: repeat(1fr, 10)/2fr;
@@ -278,10 +279,6 @@ main {
   margin-top: 160px;
 }
 
-main .main__a .cntnt-default:nth-child(6) {
-  margin-top: 180px;
-}
-
 main .main__b .image:nth-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -335,6 +332,7 @@ main .main__c .image img:nth-child(2), main .main__c .image img:nth-child(4), ma
 .grid {
   display: -ms-grid;
   display: grid;
+  margin-bottom: 100px;
   -ms-grid-rows: (10)[1fr];
   -ms-grid-columns: 2fr;
       grid-template: repeat(1fr, 10)/2fr;
@@ -458,9 +456,7 @@ main .main__c .image img:nth-child(2), main .main__c .image img:nth-child(4), ma
   }
   main .main__a .cntnt-default p {
     width: 70%;
-  }
-  main .main__a img:last-of-type {
-    margin: 0;
+    margin: 0 auto;
   }
   main .main__b .image {
     display: -webkit-box;
