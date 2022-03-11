@@ -4,7 +4,6 @@
 @import "mixins";
 @import "header";
 @import "footer";
-@import "active-states";
 
 // Import Fonts Bai Jamjure 400 and 600 from Google Fonts
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
@@ -112,3 +111,4 @@ main {
 
 // Import media queries for screens wider than 1000px
 @import "media-queries";
+@import "active-states";

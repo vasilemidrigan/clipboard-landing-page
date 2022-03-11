@@ -1,5 +1,12 @@
 // Active states
 
+@import "mixins";
+
+// Flexbox icons
+.toFlex {
+  @include display-flex(row, center, center);
+}
+
 // desktop image and items grid
 .grid {
   display: grid;
