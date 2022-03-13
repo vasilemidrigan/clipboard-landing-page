@@ -23,6 +23,10 @@ header .header-wrapper .logo {
           align-items: center;
 }
 
+header .header-wrapper .logo img:hover {
+  cursor: pointer;
+}
+
 header .header-wrapper .header-cntnt__txt-wrap {
   width: 85%;
   margin: 0 auto;
@@ -69,6 +73,10 @@ footer ul li {
   margin-bottom: 30px;
 }
 
+footer ul li:hover {
+  cursor: pointer;
+}
+
 footer .socials {
   margin: 20px 0 50px 0;
   width: 50%;
@@ -89,6 +97,10 @@ footer .socials {
 footer .socials img {
   width: 25px;
   height: 25px;
+}
+
+footer .socials img:hover {
+  cursor: pointer;
 }
 
 * {
@@ -210,6 +222,10 @@ h3 {
           box-shadow: 2px 3px 0px #4a5bd9;
 }
 
+.btns button:hover {
+  cursor: pointer;
+}
+
 main {
   margin-top: 160px;
 }
@@ -218,10 +234,10 @@ main .main__b .image:nth-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -409,12 +425,26 @@ main .main__c .image img:nth-child(2), main .main__c .image img:nth-child(4), ma
     width: 70%;
     margin: 0 auto;
   }
+  main .main__b .toFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   main .main__b .toFlex .cntnt-default {
-    border: 1px solid peru;
     margin: 30px;
   }
   main .main__c {
-    margin: 100px 0 140px 0;
+    margin: 50px 0 50px 0;
   }
   main .main__c .image {
     display: -webkit-box;
@@ -435,6 +465,36 @@ main .main__c .image img:nth-child(2), main .main__c .image img:nth-child(4), ma
   main .main__c .image img {
     all: unset;
     margin: 70px;
+    width: 150px;
+  }
+  footer {
+    padding: 0 100px 0 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .ftrList {
+    margin-right: 200px;
+  }
+  footer .ftrList ul {
+    -webkit-column-count: 3;
+            column-count: 3;
+    text-align: left;
+  }
+  footer .ftrList ul li {
+    margin: 0px 25px 20px 25px;
+  }
+  footer .socials {
     width: 150px;
   }
 }

@@ -54,14 +54,14 @@
     }
     .main__b {
       .toFlex {
+        @include display-flex(row, center, center);
         .cntnt-default {
-          border: 1px solid peru;
           margin: 30px;
         }
       }
     }
     .main__c {
-      margin: 100px 0 140px 0;
+      margin: 50px 0 50px 0;
       .image {
         @include display-flex(row, center, center);
         margin-top: 0;
@@ -71,6 +71,24 @@
           width: 150px;
         }
       }
+    }
+  }
+  // Footer
+  footer {
+    padding: 0 100px 0 100px;
+    @include display-flex(row, space-evenly, center);
+    .ftrList {
+      margin-right: 200px;
+      ul {
+        column-count: 3;
+        text-align: left;
+        li {
+          margin: 0px 25px 20px 25px;
+        }
+      }
+    }
+    .socials {
+      width: 150px;
     }
   }
 }

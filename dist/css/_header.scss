@@ -7,6 +7,9 @@ header {
     .logo {
       background-image: url(/images/bg-header-mobile.png);
       @include display-flex(row, center, center);
+      img:hover {
+        cursor: pointer;
+      }
     }
     .header-cntnt__txt-wrap {
       width: 85%;

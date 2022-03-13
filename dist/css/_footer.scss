@@ -21,6 +21,9 @@ footer {
     li {
       color: $dark-grayish-blue;
       margin-bottom: 30px;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
   .socials {
@@ -30,6 +33,9 @@ footer {
     img {
       width: 25px;
       height: 25px;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }

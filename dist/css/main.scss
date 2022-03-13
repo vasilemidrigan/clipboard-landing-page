@@ -76,16 +76,17 @@ h3 {
       background-color: $light-blue;
       box-shadow: 2px 3px 0px $border-blue;
     }
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 // Main Section
 main {
   margin-top: 160px;
-  .main__a {
-  }
   .main__b {
     .image:nth-child(1) {
-      @include display-flex(row, center, center);
+      @include display-flex(column, center, center);
       img {
         width: unset;
         margin-bottom: 50px;
